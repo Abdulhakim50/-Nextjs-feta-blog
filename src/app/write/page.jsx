@@ -29,7 +29,7 @@ const WritePage = () => {
   const [catSlug, setCatSlug] = useState("");
 
   useEffect(() => {
-    if (document) {
+   
     const storage = getStorage(app);
     const upload = () => {
       const name = new Date().getTime() + file.name;
@@ -60,9 +60,10 @@ const WritePage = () => {
         }
       );
     };
-
+    if (typeof window !== 'undefined') {
     file && upload();
- } }, [file]);
+    }
+ }, [file]);
 
   if (status === "loading") {
     return <div className={styles.loading}>Loading...</div>;
