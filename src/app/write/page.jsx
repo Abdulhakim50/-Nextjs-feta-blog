@@ -29,7 +29,7 @@ const WritePage = () => {
   const [catSlug, setCatSlug] = useState("");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (document) {
     const storage = getStorage(app);
     const upload = () => {
       const name = new Date().getTime() + file.name;
