@@ -21,7 +21,9 @@ export const ThemeContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    if (typeof window !== "undefined"){
     localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   return (
