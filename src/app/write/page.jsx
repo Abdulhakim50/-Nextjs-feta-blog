@@ -61,9 +61,9 @@ const WritePage = () => {
   useEffect(() => {
     const storage = getStorage(app);
     if (window) {
-      file && upload();
+      upload()
     }
-
+    file && upload();
    
   }, [file]);
 
