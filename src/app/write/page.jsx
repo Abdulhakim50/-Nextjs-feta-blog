@@ -13,7 +13,8 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+const ReactQuill=dynamic(()=> import("react-quill"),{ssr:false});
 
 
 const WritePage = () => {
@@ -60,9 +61,9 @@ const WritePage = () => {
         }
       );
     };
-    if (typeof window !== 'undefined') {
+    
     file && upload();
-    }
+    
  }, [file]);
 
   if (status === "loading") {
