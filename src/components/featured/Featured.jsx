@@ -5,7 +5,7 @@ import Link from "next/link";
 import 'animate.css';
 
 const getData = async ()=>{
-  const res = await fetch( 'https://feta-blog-amaharic.vercel.app/api/futuredPost',{
+  const res = await fetch( 'https://feta-blogg.vercel.app/api/futuredPost',{
     cache:"no-store"
   });
 
