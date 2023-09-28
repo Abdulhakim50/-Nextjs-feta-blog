@@ -14,11 +14,11 @@ const nextConfig = {
           },
           {
             key: "Access-Control-Allow-Methods",
-            value: "GET,POST,PUT,DELETE,PATCH,OPTIONS", // Allow all methods
+            value: "GET,POST,PUT,DELETE,PATCH,OPTIONS",
           },
           {
             key: "Access-Control-Allow-Headers",
-            value: "Content-Type,Authorization", // Allow all headers
+            value: "Content-Type,Authorization",
           },
         ],
       },
