@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./writePage.module.css";
 import { useEffect, useState } from "react";
+import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import {
@@ -138,8 +139,11 @@ const WritePage = () => {
        
           </div>
         )}
-        <input
+        <ReactQuill
+        // Display the content using ReactQuill with readOnly prop
+          readOnly={false}
           className={styles.textArea}
+          theme="bubble"
           value={value}
           onChange={setValue}
           placeholder="Tell your story..."
