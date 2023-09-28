@@ -6,7 +6,7 @@ const nextConfig = {
    async headers() {
     return [
       {
-        source: "/api/:path*",
+        source: "https://feta-blog-amaharic.vercel.app/api/:path*",
         headers: [
           {
             key: "Access-Control-Allow-Origin",
