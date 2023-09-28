@@ -14,7 +14,7 @@ import {
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
 import dynamic from "next/dynamic";
-const ReactQuill=dynamic(()=> import("react-quill"),{ssr:false});
+
 
 
 const WritePage = () => {
@@ -139,11 +139,9 @@ const WritePage = () => {
        
           </div>
         )}
-        <ReactQuill
+        <input
         // Display the content using ReactQuill with readOnly prop
-          readOnly={false}
           className={styles.textArea}
-          theme="bubble"
           value={value}
           onChange={setValue}
           placeholder="Tell your story..."
