@@ -10,11 +10,17 @@
 }
 .title {
   font-size: 28px;
+
 }
 
 
 @media screen and (max-width: 1024px) {
   .container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+ padding: 50px;
+  
   }
 }

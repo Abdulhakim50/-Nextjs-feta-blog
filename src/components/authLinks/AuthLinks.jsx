@@ -14,7 +14,7 @@ const AuthLinks = () => {
       {status === "unauthenticated" ? (
         <>
          <Link href="/write" className={styles.link}>
-            Post
+            Write
           </Link>
           <Link href="/login" className={styles.link}>
             Login
@@ -43,8 +43,9 @@ const AuthLinks = () => {
         <Link href="/">Contact</Link>
         {status === "unauthenticated" ? (
           <>
+           <Link href="/write">Write</Link>
           <Link href="/login">Login</Link>
-          <Link href="/write">Write</Link>
+         
           </>
         ) : (
           <>
