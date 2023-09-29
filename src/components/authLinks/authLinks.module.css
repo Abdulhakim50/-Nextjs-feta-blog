@@ -1,5 +1,10 @@
 .link {
   cursor: pointer;
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500px;
 }
 
 .burger {
@@ -33,6 +38,22 @@
   z-index: 999;
 }
 
+@media screen and (max-width: 1280px) {
+  .esponsiveMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .esponsiveMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .esponsiveMenu {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .burger {
     display: flex;
@@ -41,4 +62,5 @@
   .link{
     display: none;
   }
+
 }

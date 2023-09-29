@@ -11,14 +11,19 @@ const AuthLinks = () => {
 
   return (
     <>
-      {status === "unauthenticated" ? (
+      {status === "unauthenticated"? (
+        <>
         <Link href="/login" className={styles.link}>
           Login
         </Link>
+           <Link href="/write" className={styles.link}>
+           Write
+         </Link>
+         </>
       ) : (
         <>
-          <Link href="/write" className={styles.link}>
-            Write
+            <Link href="/write" className={styles.link}>
+           Write
           </Link>
           <span className={styles.link} onClick={signOut}>
             Logout
@@ -34,19 +39,18 @@ const AuthLinks = () => {
         <div className={styles.responsiveMenu}>
           <Link href="/">Homepage</Link>
           <Link href="/">About</Link>
-          <Link href="/contact">Contact</Link>
-          
-
+          <Link href="/">Contact</Link>
           {status === "unauthenticated" ? (
+            <>
             <Link href="/login">Login</Link>
+            <Link href="/write">Write</Link>
+            </>
           ) : (
             <>
-            <Link href="/write" className={styles.link}>
-            Write
-          </Link>
-          <span className={styles.link} onClick={signOut}>
-            Logout
-          </span>
+             <Link href="/write">Write</Link>
+            <span  onClick={signOut}>
+                Logout
+              </span>
             </>
           )}
         </div>

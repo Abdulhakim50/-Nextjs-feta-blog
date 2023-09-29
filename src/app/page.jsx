@@ -7,11 +7,12 @@ import Menu from "@/components/Menu/Menu";
 
 export default function Home({ searchParams }) {
   const page = parseInt(searchParams.page) || 1;
+  const { catSlug } = searchParams;
 
   return (
     <div className={styles.container}>
       <Featured />
-      <CategoryList />
+      <CategoryList cat={catSlug}/>
       <div className={styles.content}>
         <CardList page={page}/>
         <Menu />
