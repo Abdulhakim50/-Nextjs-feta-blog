@@ -79,7 +79,10 @@
   }
 }
 @media screen and (max-width: 1024px) {
- 
+  .infoContainer {
+    display: flex;
+   flex-direction: column;
+  }
 }
 @media screen and (max-width: 640px) {
   .title {
