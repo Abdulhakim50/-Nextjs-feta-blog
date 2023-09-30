@@ -122,7 +122,7 @@ const WritePage = () => {
       <option value="Technology">Technology</option>
       <option value="Sport">Sport</option>
       <option value="Entertainment">Entertainment</option>
-          <option value="News">News</option>
+          <option value="Biology">Biology</option>
     </select>
     <div className={styles.editor}>
       <button className={styles.button} onClick={() => setOpen(!open)}>
