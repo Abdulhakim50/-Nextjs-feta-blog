@@ -91,4 +91,9 @@
   .description p{
     font-size: 18px;
   }
+  .content {
+    display: flex;
+   flex-direction: column;
+  }
+  
 }
