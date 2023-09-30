@@ -84,7 +84,7 @@ const WritePage = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
-    const res = await fetch("http://localhost:3000/api/posts", {
+    const res = await fetch("https://feta-blogg.vercel.app/api/posts", {
       method: "POST",
       body: JSON.stringify({
         title,
@@ -97,7 +97,7 @@ const WritePage = () => {
 
     if (res.status === 200) {
       const data = await res.json();
-      router.push(`http://localhost:3000/posts/${data.slug}`);
+      router.push(`https://feta-blogg.vercel.app/posts/${data.slug}`);
     }
   };
 
