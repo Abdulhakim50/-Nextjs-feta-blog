@@ -24,7 +24,11 @@ const Comments = ({ postSlug }) => {
   const { status } = useSession();
 
   const { data, mutate, isLoading } = useSWR(
+<<<<<<< HEAD
     `http://localhost:3000/api/comments?postSlug=${postSlug}`,
+=======
+    `https://feta-blogg.vercel.app/api/comments?postSlug=${postSlug}`,
+>>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
     fetcher
   );
 

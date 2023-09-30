@@ -4,7 +4,11 @@ import Image from "next/image";
 import Comments from "@/components/comments/Comments";
 
 const getData = async (slug) => {
+<<<<<<< HEAD
   const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+=======
+  const res = await fetch(`https://feta-blogg.vercel.app/api/posts/${slug}`, {
+>>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
     cache: "no-store",
   });
 
