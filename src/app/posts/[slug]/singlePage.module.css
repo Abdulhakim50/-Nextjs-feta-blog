@@ -79,9 +79,7 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .imageContainer {
-    display: none;
-  }
+ 
 }
 @media screen and (max-width: 640px) {
   .title {
