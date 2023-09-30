@@ -11,17 +11,6 @@ const AuthLinks = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      {status === "unauthenticated"? (
-        <>
-        <Link href="/login" className={styles.link}>
-          Login
-        </Link>
-           <Link href="/write" className={styles.link}>
-           Write
-         </Link>
-         </>
-=======
       {status === "unauthenticated" ? (
         <>
          <Link href="/write" className={styles.link}>
@@ -32,11 +21,10 @@ const AuthLinks = () => {
           </Link>
          
         </>
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
       ) : (
         <>
-            <Link href="/write" className={styles.link}>
-           Write
+          <Link href="/write" className={styles.link}>
+            Write
           </Link>
           <span className={styles.link} onClick={signOut}>
             Logout
@@ -50,25 +38,6 @@ const AuthLinks = () => {
       </div>
       {open && (
         <div className={styles.responsiveMenu}>
-<<<<<<< HEAD
-          <Link href="/">Homepage</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
-          {status === "unauthenticated" ? (
-            <>
-            <Link href="/login">Login</Link>
-            <Link href="/write">Write</Link>
-            </>
-          ) : (
-            <>
-             <Link href="/write">Write</Link>
-            <span  onClick={signOut}>
-                Logout
-              </span>
-            </>
-          )}
-        </div>
-=======
         <Link href="/">Homepage</Link>
         <Link href="/">About</Link>
         <Link href="/">Contact</Link>
@@ -87,7 +56,6 @@ const AuthLinks = () => {
           </>
         )}
       </div>
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
       )}
     </>
   );

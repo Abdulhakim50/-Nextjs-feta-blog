@@ -5,7 +5,6 @@ import styles from "./writePage.module.css";
 import { useEffect, useState } from "react";
 import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import {
@@ -85,11 +84,7 @@ const WritePage = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
-<<<<<<< HEAD
     const res = await fetch("http://localhost:3000/api/posts", {
-=======
-    const res = await fetch("https://feta-blogg.vercel.app/api/posts", {
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
       method: "POST",
       body: JSON.stringify({
         title,
@@ -102,18 +97,14 @@ const WritePage = () => {
 
     if (res.status === 200) {
       const data = await res.json();
-      router.push(`https://feta-blogg.vercel.app/posts/${data.slug}`);
+      router.push(`http://localhost:3000/posts/${data.slug}`);
     }
   };
 
   return (
     <div className={styles.container}>
   {status === "unauthenticated" ?(
-<<<<<<< HEAD
-    <Link href="/login">Login to to create Blog</Link>
-=======
     <Link href="/login">Login to write a comment</Link>
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
   ):(
      <>
     <input
@@ -131,11 +122,7 @@ const WritePage = () => {
       <option value="Technology">Technology</option>
       <option value="Sport">Sport</option>
       <option value="Entertainment">Entertainment</option>
-<<<<<<< HEAD
-          <option value="Biology">Biology</option>
-=======
           <option value="News">News</option>
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
     </select>
     <div className={styles.editor}>
       <button className={styles.button} onClick={() => setOpen(!open)}>
@@ -174,11 +161,6 @@ const WritePage = () => {
      )}
   </div>
 
-<<<<<<< HEAD
- 
-  
-=======
->>>>>>> baf17a122a8bf51f170738f7de5af65dd40f7949
   );
 };
 

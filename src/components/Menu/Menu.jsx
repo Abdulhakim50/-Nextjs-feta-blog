@@ -12,7 +12,7 @@ const Menu = () => {
       <h1 className={styles.title}>Most Popular</h1>
       <MenuPosts withImage={false} />
      
-   
+      <h2 className={styles.subtitle}>Chosen by Author</h2>
       <h1 className={styles.title}>Author Pick</h1>
       <MenuPosts withImage={true} />
     </div>
