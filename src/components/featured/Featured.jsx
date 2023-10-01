@@ -19,7 +19,7 @@ const Featured = async () => {
   const posts = await getData();
   return (
     <>
-   <Animat>
+    <Animat>
     <div className={styles.container}>
 <h1 className={styles.title}>
   <b className="">የሚወዱትን ታሪክ ያጋሩ ፣ ታሪኮችን ይጋሩ</b> Discover Your Stories And Share Stories Of Others.
@@ -46,10 +46,6 @@ const Featured = async () => {
     ))}
     </div>
     </Animat>
-
-
-    ))}
-    </div>
    
     </>
   );
