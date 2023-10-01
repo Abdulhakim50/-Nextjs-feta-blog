@@ -40,19 +40,22 @@ const AuthLinks = () => {
         <div className={styles.responsiveMenu}>
         <Link href="/">Homepage</Link>
         <Link href="/">About</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/contact">Contact</Link>
         {status === "unauthenticated" ? (
           <>
            <Link href="/write">Write</Link>
           <Link href="/login">Login</Link>
          
           </>
+          
         ) : (
           <>
            <Link href="/write">Write</Link>
           <span  onClick={signOut}>
               Logout
             </span>
+
+          
           </>
         )}
       </div>

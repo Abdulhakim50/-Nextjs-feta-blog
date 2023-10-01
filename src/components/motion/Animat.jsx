@@ -33,7 +33,7 @@ import { motion,useInView,useAnimation } from "framer-motion";
         }}
         initial ="hidden"
         animate={mainContros}
-        transition={{duration:0.5 ,delay:0.25}}
+        transition={{duration:1 ,delay:0.5}}
         >{children}</motion.div>
 
 <motion.div

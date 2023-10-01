@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./categoryList.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Animat } from "../motion/Animat";
 
 const getData = async () => {
   const res = await fetch("https://aboutquran.vercel.app/api/categories", {
@@ -18,6 +19,7 @@ const getData = async () => {
 const CategoryList = async () => {
   const data = await getData();
   return (
+    <Animat>
     <div className={styles.container}>
       <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
@@ -41,6 +43,7 @@ const CategoryList = async () => {
         ))}
       </div>
     </div>
+    </Animat>
   );
 };
 
