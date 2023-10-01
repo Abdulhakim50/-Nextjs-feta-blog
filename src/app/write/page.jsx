@@ -114,15 +114,16 @@ const WritePage = () => {
       onChange={(e) => setTitle(e.target.value)}
     />
     <select className={styles.select} onChange={(e) => setCatSlug(e.target.value)}>
-      <option value="Style">Style</option>
-      <option value="Fashion">Fashion</option>
-      <option value="Food">Food</option>
-      <option value="Culture">Culture</option>
-      <option value="Travel">Travel</option>
-      <option value="Technology">Technology</option>
-      <option value="Sport">Sport</option>
-      <option value="Entertainment">Entertainment</option>
-          <option value="News">News</option>
+      <option value="ጂኦሎጂ">ጂኦሎጂ</option>
+      <option value="ባዮሎጂ">ባዮሎጂ</option>
+      <option value="የሥነ እንስሳት ጥናት">የሥነ እንስሳት ጥናት</option>
+      <option value="ሜቲዮሮሎጂ">ሜቲዮሮሎጂ</option>
+      <option value="Tኬሚስትሪ">ኬሚስትሪ</option>
+      <option value="Tፊዚክስ">ፊዚክስ</option>
+      <option value="ሒሳብ">ሒሳብ</option>
+      <option value="ሥነ ፈለክ">ሥነ ፈለክ</option>
+          <option value="ኮስሞሎጂ">ኮስሞሎጂ</option>
+          <option value="የግብጽ ጥናት">የግብጽ ጥናት</option>
     </select>
     <div className={styles.editor}>
       <button className={styles.button} onClick={() => setOpen(!open)}>
