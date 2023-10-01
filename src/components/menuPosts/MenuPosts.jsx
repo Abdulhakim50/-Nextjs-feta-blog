@@ -6,6 +6,7 @@ import PopularLists from "../PopularLists/PopularLists";
 
 
 
+
 const getData = async ()=>{
   const res = await fetch( 'https://feta-blogg.vercel.app/api/PoularPost');
 
