@@ -1,6 +1,7 @@
 "use client"
 import { useEffect,useRef } from "react";
-import { motion,useInView,useAnimation } from "framer-motion";
+import { motion,useInView,useAnimation } from "node_modules/framer-motion/dist/framer-motion";
+
 
 
     export const Animat = ({children}) => {
