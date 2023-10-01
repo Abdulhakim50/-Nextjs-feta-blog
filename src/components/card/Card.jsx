@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
+import { Animat } from "../motion/Animat";
 
 const Card = ({ key, item }) => {
   return (
+    <Animat>
     <div className={styles.container} key={key}>
       {item.img && (
         <div className={styles.imageContainer}>
@@ -27,6 +29,7 @@ const Card = ({ key, item }) => {
         </Link>
       </div>
     </div>
+    </Animat>
   );
 };
 
