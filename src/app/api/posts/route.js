@@ -12,7 +12,7 @@ export const GET = async (req) => {
 
   const query = {
     orderBy:{
-      createdAt:'asc'
+      createdAt:'desc'
   },
     take: POST_PER_PAGE,
     skip: POST_PER_PAGE * (page - 1),
