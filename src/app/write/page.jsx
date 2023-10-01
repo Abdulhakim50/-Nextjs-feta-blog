@@ -104,7 +104,10 @@ const WritePage = () => {
   return (
     <div className={styles.container}>
   {status === "unauthenticated" ?(
-    <Link href="/login">Login to write a comment</Link>
+    <>
+    <Link href="/login">Click Please Login to Post blogs</Link>
+    <Link href="/login">Login</Link>
+    </>
   ):(
      <>
     <input

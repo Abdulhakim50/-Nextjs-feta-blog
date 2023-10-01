@@ -24,18 +24,27 @@
 
 .responsiveMenu{
   position: absolute;
-  top: 100px;
-  left: 0;
-  background-color: var(--bg);
-  height: calc(100vh - 100px);
-  width: 100%;
+  top: 70px;
+  right: 30px;
+  background-color:rgb(22, 80, 160);
+  height: 400px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  font-size: 36px;
+  font-size: 25px;
   z-index: 999;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+
+}
+.l{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
 }
 
 @media screen and (max-width: 1280px) {
