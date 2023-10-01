@@ -6,7 +6,7 @@ import 'animate.css';
 import { Animat } from "../motion/Animat";
 
 const getData = async ()=>{
-  const res = await fetch( 'https://feta-blogg.vercel.app/api/futuredPost',{
+  const res = await fetch( 'https://aboutquran.vercel.app/api/futuredPost',{
     cache:"no-store"
   });
 

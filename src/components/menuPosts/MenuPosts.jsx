@@ -8,7 +8,7 @@ import PopularLists from "../PopularLists/PopularLists";
 
 
 const getData = async ()=>{
-  const res = await fetch( 'https://feta-blogg.vercel.app/api/PoularPost');
+  const res = await fetch( 'https://aboutquran.vercel.app/api/PoularPost');
 
 
       return   res.json();
