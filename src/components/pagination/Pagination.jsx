@@ -3,11 +3,13 @@
 import React from "react";
 import styles from "./pagination.module.css";
 import { useRouter } from "next/navigation";
+import { Animat } from "../motion/Animat";
 
 const Pagination = ({ page, hasPrev, hasNext }) => {
   const router = useRouter();
 
   return (
+    <Animat>
     <div className={styles.container}>
       <button
         className={styles.button}
@@ -24,6 +26,7 @@ const Pagination = ({ page, hasPrev, hasNext }) => {
         Next
       </button>
     </div>
+    </Animat>
   );
 };
 
