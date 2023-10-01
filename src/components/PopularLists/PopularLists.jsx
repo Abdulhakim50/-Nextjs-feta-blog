@@ -1,12 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Animat } from '../motion/Animat'
 
  import styles from "./PoularLists.module.css"
 const PopularLists = ({data,key}) => {
   return (
-    <Animat>
     <Link href={`/posts/${data.slug}`} className={styles.item} key={key} >
    <div className={styles.items}></div>
       <div className={styles.imageContainer}>
@@ -25,7 +23,7 @@ const PopularLists = ({data,key}) => {
     </div>
     
   </Link>
-  </Animat>
+
   )
 }
 
