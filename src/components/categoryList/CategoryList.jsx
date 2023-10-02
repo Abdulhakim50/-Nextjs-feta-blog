@@ -19,11 +19,10 @@ const getData = async () => {
 const CategoryList = async () => {
   const data = await getData();
   return (
-   
+    <Animat>
     <div className={styles.container}>
       <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
-      <Animat>
         {data?.map((item) => (
           <Link
             href={`/blog?cat=${item.title}`}
@@ -45,10 +44,10 @@ const CategoryList = async () => {
            <h4>{item.title}</h4> 
             </div>
           </Link>
-        ))} </Animat>
+        ))}
       </div>
     </div>
-   
+    </Animat>
   );
 };
 
