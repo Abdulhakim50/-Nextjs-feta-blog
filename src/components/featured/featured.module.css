@@ -1,25 +1,39 @@
 .container {
   margin-top: 30px;
-;
+
 }
 
 .title {
 
-  font-size: 96px;
-  font-weight: 300;
+ 
+
   animation: backInLeft;
-  background-image: url("/quran3.jpg");
+  background-image: url("/quran5.jpg");
   background-repeat: no-repeat;
   background-size:1500px 1400px;
   background-position: center;
-  color: white;
   height: 600px;
   margin-left:100px;
+  border-radius: 0 0 50% 50%;
+
+ 
+
+}
+.b{
+  position:absolute;
+  color: white;
+  font-weight: 300;
+  font-size: 96px;
+  text-align: center;
+  letter-spacing: 20px;
+  margin-left: 100px;
+  margin-top: 200px;
+  word-spacing: 128px;
 
 }
 
 .post {
-  margin-top: 60px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -57,20 +71,32 @@
   border: none;
   border-radius: 5px;
   width: max-content;
+  border-bottom: 3px solid crimson;
 }
 .Featured{
- margin-top: 20px;
+ margin-top: 50px;
+ border-left: 10px red solid;
 }
+
 
 @media screen and (max-width: 1280px) {
   .title {
+    background-size:800px 800px;
+  }
+  .p{
     font-size: 72px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .title {
+    background-size:cover;
+    margin-left: 0px;
+  }
+  .b{
     font-size: 64px;
+    margin-left:10px ;
+    margin-top: 0px;
   }
 
   .imgContainer {
@@ -80,12 +106,26 @@
 
 @media screen and (max-width: 768px) {
   .title {
+    background-size:cover;
+    margin-left: 0px;
+  }
+  .b{
     font-size: 48px;
+    margin-left:10px ;
+    margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .title {
+    background-size:cover;
+    border-radius: 0 0 50% 50%;
+    margin-left: 0px;
+    height: 400px;
+  }
+  .b{
     font-size: 36px;
+    margin-left:10px ;
+    margin-top: 0px;
   }
 }

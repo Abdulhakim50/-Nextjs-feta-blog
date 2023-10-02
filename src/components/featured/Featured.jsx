@@ -22,7 +22,7 @@ const Featured = async () => {
     <Animat>
     <div className={styles.container}>
 <h1 className={styles.title}>
-  <b className="">የቁርኣን ተአምራት</b>
+  <b className={styles.b}>የቁርኣን ተአምራት</b>
 </h1>
 
   <h1 className={styles.Featured}>Featured Post</h1>
