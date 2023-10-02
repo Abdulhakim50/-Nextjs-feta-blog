@@ -99,9 +99,7 @@
     margin-top: 0px;
   }
 
-  .imgContainer {
-    display: none;
-  }
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -123,9 +121,14 @@
     margin-left: 0px;
     height: 400px;
   }
+  .post{
+   
+    flex-direction: column;
+  }
   .b{
     font-size: 36px;
     margin-left:10px ;
     margin-top: 0px;
   }
+ 
 }

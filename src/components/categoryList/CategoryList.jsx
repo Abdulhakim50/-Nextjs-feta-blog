@@ -29,16 +29,20 @@ const CategoryList = async () => {
             className={`${styles.category} ${styles[item.slug]}`}
             key={item._id}
           >
+          
             {item.img && (
               <Image
                 src={item.img}
                 alt=""
-                width={32}
-                height={32}
+                width={130}
+                height={62}
                 className={styles.image}
               />
             )}
-            {item.title}
+       
+            <div className={styles.content}>
+           <h4>{item.title}</h4> 
+            </div>
           </Link>
         ))}
       </div>

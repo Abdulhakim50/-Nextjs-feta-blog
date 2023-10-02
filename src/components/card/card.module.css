@@ -13,6 +13,7 @@
 
 .image {
   object-fit: cover;
+  margin-top: 10px;
 }
 
 .textContainer {
@@ -44,6 +45,10 @@
 }
 .h{
   color: red;
+}
+.hr{
+  height: 1px;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
 

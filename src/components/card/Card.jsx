@@ -29,6 +29,7 @@ const Card = ({ key, item }) => {
         </Link>
       </div>
     </div>
+    <hr className={styles.hr}/>
     </Animat>
   );
 };

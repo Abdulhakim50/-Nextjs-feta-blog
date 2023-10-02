@@ -8,11 +8,11 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="lama blog" width={50} height={50} />
-          <h1 className={styles.logoText}>ፈታ blog</h1>
+          <Image src="/q.png" alt="lama blog" width={50} height={50} />
+          <h1 className={styles.logoText}>ስለ ቁርአን</h1>
         </div>
         <p className={styles.desc}>
-        የሚወዱትን ታሪክ ያጋሩ ፣ ታሪኮችን ይጋሩ Discover Your Stories And Share Stories Of Others.
+        ስለ ቁርአን እና  ስለሌሎች  ኢስላም ነክ ስለሆኑ ነገሮች ያንብቡ እንዲሁም እርሶም ያጋሩን!
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
