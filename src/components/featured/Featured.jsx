@@ -22,7 +22,7 @@ const Featured = async () => {
     <Animat>
     <div className={styles.container}>
 <h1 className={styles.title}>
-  <b className="">የሚወዱትን ታሪክ ያጋሩ ፣ ታሪኮችን ይጋሩ</b> Discover Your Stories And Share Stories Of Others.
+  <b className="">የቁርኣን ተአምራት</b>
 </h1>
 
   <h1 className={styles.Featured}>Featured Post</h1>
@@ -35,8 +35,8 @@ const Featured = async () => {
   </div>
   <div className={styles.textContainer}>
     <h1 className={styles.postTitle}>{item.title}</h1>
-    <p className={styles.postDesc}>
-    {item.desc}
+    <p className={styles.postDesc} >
+    {item?.desc.substring(0,180)}...
     </p>
     <Link href={`/posts/${item.slug}`}  className={styles.button}>Read More</Link>
   </div>

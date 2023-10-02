@@ -7,6 +7,7 @@ import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import sanitizeHtml from 'sanitize-html';
 import {
   getStorage,
   ref,
@@ -74,6 +75,12 @@ const WritePage = () => {
   if (status === "unauthenticated") {
     router.push("/");
   }
+
+  var cleanValue = sanitizeHtml(value, {
+    allowedTags: [], // Specify which tags you want to allow, or leave it empty to remove all tags
+    allowedAttributes: {} // Specify which attributes you want to allow, or leave it empty to remove all attributes
+  });
+
 
   const slugify = (str) =>
     str
@@ -149,8 +156,7 @@ const WritePage = () => {
         </div>
       )}
       <ReactQuill
-      // Display the content using ReactQuill with readOnly prop
-        readOnly={false}
+ 
         className={styles.textArea}
         theme="bubble"
         value={value}
