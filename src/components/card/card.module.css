@@ -42,7 +42,9 @@
   width: max-content;
   padding: 2px 0px;
 }
-
+.h{
+  color: red;
+}
 @media screen and (max-width: 1024px) {
 
     .container {
