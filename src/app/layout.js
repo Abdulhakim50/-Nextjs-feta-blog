@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ስለ ቁርአን",
+  description: "ስለ ቁርአን",
 };
 
 export default function RootLayout({ children }) {
