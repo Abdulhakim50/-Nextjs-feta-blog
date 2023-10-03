@@ -31,7 +31,7 @@ const Card = ({ key, item }) => {
           Read More
         </Link>
       </div>
-      <div>
+      <div className={styles.cont}>
       <Image src="/eye.png" width={50} height={40}/>
       <h4 className={styles.h1}>{item.views}</h4>
       </div>
