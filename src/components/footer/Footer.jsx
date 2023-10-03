@@ -25,16 +25,16 @@ const Footer = () => {
         <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
           <Link href="/">Homepage</Link>
-          <Link href="/">Blog</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div className={styles.list}>
-          <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <span className={styles.listTitle}>መለያዎች</span>
+          <Link href="/">ሜቲዮሮሎጂ</Link>
+          <Link href="/">ባዮሎጂ</Link>
+          <Link href="/">ፊዚክስ</Link>
+          <Link href="/">ሥነ ፈለክ</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Social</span>
