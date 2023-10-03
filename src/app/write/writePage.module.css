@@ -73,3 +73,21 @@
   cursor: pointer;
   border-radius: 20px;
 }
+.pp{
+  margin-left: 50px;
+  color: red;
+}
+
+
+@media screen and (max-width: 640px) {
+  .pp{
+    margin-top: 50px;
+    color: red;
+  }
+}
+@media screen and (max-width: 376px) {
+  .pp{
+    margin-top: 50px;
+    color: red;
+  }
+}

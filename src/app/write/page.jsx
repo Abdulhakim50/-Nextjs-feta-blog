@@ -112,11 +112,13 @@ const WritePage = () => {
     <div className={styles.container}>
   {status === "unauthenticated" ?(
     <>
-    <Link href="/login">Click Please Login to Post blogs</Link>
-    <Link href="/login">Login</Link>
+    <Link href="/login"> Please Login to Post blogs</Link>
+    <Link href="/login" className={styles.login}>Login</Link>
     </>
   ):(
      <>
+
+     <p className={styles.pp}> እባኮ ኢስላም ነክ ነገሮችን ብቻ  ያጋሩ</p>
     <input
       type="text"
       placeholder="Title"

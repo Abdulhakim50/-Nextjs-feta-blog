@@ -13,7 +13,7 @@ const AuthLinks = () => {
     <>
       {status === "unauthenticated" ? (
         <>
-         <Link href="/write" className={styles.link}>
+         <Link href="/" onClick={() => alert("እባኮ ለመፃፍ መጀመሪያ Login ያድርጉ!!")} className={styles.link}>
             Write
           </Link>
           <Link href="/login" className={styles.link}>
