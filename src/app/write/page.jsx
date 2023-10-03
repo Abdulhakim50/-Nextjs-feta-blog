@@ -128,6 +128,7 @@ const WritePage = () => {
     <select className={styles.select} onChange={(e) => setCatSlug(e.target.value)}>
       <option value="ጂኦሎጂ">ጂኦሎጂ</option>
       <option value="ባዮሎጂ">ባዮሎጂ</option>
+      <option value="ሌላ">ሌላ</option>
       <option value="የሥነ እንስሳት ጥናት">የሥነ እንስሳት ጥናት</option>
       <option value="ሜቲዮሮሎጂ">ሜቲዮሮሎጂ</option>
       <option value="ኬሚስትሪ">ኬሚስትሪ</option>
