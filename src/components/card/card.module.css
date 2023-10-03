@@ -45,10 +45,14 @@
 }
 .h{
   color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size:x-large;
+  word-spacing: 0;
 }
 .hr{
-  height: 1px;
-  color: black;
+  border: 1px solid #111b34;
+
 }
 @media screen and (max-width: 1024px) {
 
@@ -67,11 +71,27 @@
     }
     .imageContainer {
       flex:none;
-      height: 350px;
+      height: 250px;
       position: relative;
+
     
       
     }
-      
+    .image{
+      object-fit:fill;
+    }
+    .h{
+      color: red;
+      font-family:"Noto Sans Ethiopic", Arial, Verdana, Geneva, Helvetica, sans-serif;;
+      font-weight: 1.75rem;
+      line-height: 2rem;
+      font-size:x-large;
+      font-style: normal;
+    }
+    .desc {
+      font-size:medium;
+      font-weight: 100;
+      color: var(--softTextColor);
+    }
     
   }

@@ -115,6 +115,8 @@
 }
 
 @media screen and (max-width: 640px) {
+  
+ 
   .title {
     background-size:cover;
     border-radius: 0 0 50% 50%;
@@ -123,12 +125,28 @@
   }
   .post{
    
+    display: flex;
     flex-direction: column;
+    align-items: normal;
+
   }
   .b{
     font-size: 36px;
     margin-left:10px ;
     margin-top: 0px;
+  }
+  .image {
+    object-fit: cover;
+  }
+  .textContainer {
+    flex:none;
+  
+ 
+  }
+  .imgContainer {
+    flex: none;
+    height: 250px;
+    position: relative;
   }
  
 }

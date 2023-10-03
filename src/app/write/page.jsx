@@ -128,8 +128,8 @@ const WritePage = () => {
       <option value="ባዮሎጂ">ባዮሎጂ</option>
       <option value="የሥነ እንስሳት ጥናት">የሥነ እንስሳት ጥናት</option>
       <option value="ሜቲዮሮሎጂ">ሜቲዮሮሎጂ</option>
-      <option value="Tኬሚስትሪ">ኬሚስትሪ</option>
-      <option value="Tፊዚክስ">ፊዚክስ</option>
+      <option value="ኬሚስትሪ">ኬሚስትሪ</option>
+      <option value="ፊዚክስ">ፊዚክስ</option>
       <option value="ሒሳብ">ሒሳብ</option>
       <option value="ሥነ ፈለክ">ሥነ ፈለክ</option>
           <option value="ኮስሞሎጂ">ኮስሞሎጂ</option>

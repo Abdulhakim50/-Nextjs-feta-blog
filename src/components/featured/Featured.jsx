@@ -25,7 +25,7 @@ const Featured = async () => {
   <b className={styles.b}>የቁርኣን ተአምራት</b>
 </h1>
 
-  <h1 className={styles.Featured}>Featured Post</h1>
+  <h1 className={styles.Featured}>ልዩ ፖስት </h1>
     {posts.map((item) =>(
 
 

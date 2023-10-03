@@ -6,6 +6,7 @@ import { Animat } from "../motion/Animat";
 const Card = ({ key, item }) => {
   return (
     <Animat>
+        <hr className={styles.hr}/>
     <div className={styles.container} key={key}>
       {item.img && (
         <div className={styles.imageContainer}>
@@ -24,12 +25,13 @@ const Card = ({ key, item }) => {
         </Link>
 
         <div className={styles.desc} dangerouslySetInnerHTML={{ __html: item?.desc.substring(0,60) }}/>
+        ....
         <Link href={`/posts/${item.slug}`} className={styles.link}>
           Read More
         </Link>
       </div>
     </div>
-    <hr className={styles.hr}/>
+  
     </Animat>
   );
 };

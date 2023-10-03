@@ -21,10 +21,11 @@ const CategoryList = async () => {
   return (
   
     <div className={styles.container}>
-      <h1 className={styles.title}>Popular Categories</h1>
+      <h1 className={styles.title}>የተመረጡ ክፍሎች</h1>
+      <Animat>
       <div className={styles.categories}>
         {data?.map((item) => (
-            <Animat>
+        
           <Link
             href={`/blog?cat=${item.title}`}
             className={`${styles.category} ${styles[item.slug]}`}
@@ -45,8 +46,9 @@ const CategoryList = async () => {
            <h4>{item.title}</h4> 
             </div>
           </Link>
-          </Animat>))}
+     ))}
       </div>
+      </Animat>
     </div>
   )
 };

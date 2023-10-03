@@ -40,8 +40,11 @@ const AuthLinks = () => {
         <div className={styles.responsiveMenu}>
 
         <Link href="/" className={styles.l}>Homepage</Link>
+        <Link href="/blog" className={styles.l}>Blog</Link>
 
         <Link href="/" className={styles.l}>About</Link>
+        
+      
  
         <Link href="/contact" className={styles.l} >Contact</Link>
  

@@ -9,11 +9,11 @@ const Menu = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.subtitle}>{"What's hot"}</h2>
-      <h1 className={styles.title}>Most Popular</h1>
+      <h1 className={styles.title}>በጣም የተወደዱ</h1>
       <MenuPosts withImage={false} />
      
-      <h2 className={styles.subtitle}>Chosen by Author</h2>
-      <h1 className={styles.title}>Author Pick</h1>
+ 
+      <h1 className={styles.title}>የፀሀፊው ምርጫ</h1>
       <MenuPosts withImage={true} />
     </div>
   );
