@@ -44,7 +44,7 @@
   padding: 2px 0px;
 }
 .h{
-  color: rgb(255, 255, 255);
+
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
   font-size:x-large;
@@ -52,7 +52,13 @@
 }
 .hr{
   border: 1px solid #111b34;
+ 
+}
 
+.h1{
+text-align: center;
+  position: relative;
+ 
 }
 @media screen and (max-width: 1024px) {
 

@@ -18,6 +18,7 @@ const Card = ({ key, item }) => {
           <span className={styles.date}>
             {item.createdAt.substring(0, 10)} -{" "}
           </span>
+   
           <span className={styles.category}>{item.catSlug}</span>
         </div>
         <Link href={`/posts/${item.slug}`}>
@@ -30,6 +31,12 @@ const Card = ({ key, item }) => {
           Read More
         </Link>
       </div>
+      <div>
+      <Image src="/eye.png" width={50} height={40}/>
+      <h4 className={styles.h1}>{item.views}</h4>
+      </div>
+       
+        
     </div>
   
     </Animat>

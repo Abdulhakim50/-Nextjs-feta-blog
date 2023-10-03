@@ -53,7 +53,8 @@ const Comments = ({ postSlug }) => {
           </button>
         </div>
       ) : (
-        <Link href="/login">Login to write a comment</Link>
+        <Link href="/login">እባኮ comment ለመፃፍ መጀመሪያ Login ያድርጉ!!</Link>
+        
       )}
       <div className={styles.comments}>
         {isLoading
