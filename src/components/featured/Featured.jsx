@@ -5,6 +5,8 @@ import Link from "next/link";
 import 'animate.css';
 import { Animat } from "../motion/Animat";
 
+
+
 const getData = async ()=>{
   const res = await fetch( 'https://aboutquran.vercel.app/api/futuredPost',{
     cache:"no-store"
